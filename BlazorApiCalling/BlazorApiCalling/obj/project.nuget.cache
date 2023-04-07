@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "sf4jYDD779KEWIeStEMiKe7LEqUnDZBaALd+j2ngPX7nTyTujLf481StxMthgkIcmYGUKcvszMN26fMZf3O1IQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\oferm\\source\\repos\\C learning\\תקופת היזמות\\Blazor\\BlazorApiCalling\\BlazorApiCalling\\BlazorApiCalling.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\oferm\\.nuget\\packages\\microsoft.aspnetcore.blazor.httpclient\\3.2.0-preview3.20168.3\\microsoft.aspnetcore.blazor.httpclient.3.2.0-preview3.20168.3.nupkg.sha512",
+    "C:\\Users\\oferm\\.nuget\\packages\\system.text.json\\4.7.1\\system.text.json.4.7.1.nupkg.sha512"
+  ],
+  "logs": []
+}
