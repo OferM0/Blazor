@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Employees>
+	<Employee>
+		<Id>1</Id>
+		<Name>John Smith</Name>
+		<Country>USA</Country>
+	</Employee>
+	<Employee>
+		<Id>2</Id>
+		<Name>Anna Johnson</Name>
+		<Country>Canada</Country>
+	</Employee>
+	<Employee>
+		<Id>3</Id>
+		<Name>Peter Lee</Name>
+		<Country>China</Country>
+	</Employee>
+	<Employee>
+		<Id>4</Id>
+		<Name>Maria Rodriguez</Name>
+		<Country>Mexico</Country>
+	</Employee>
+</Employees>

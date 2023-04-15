@@ -1,0 +1,12 @@
+C:\Users\oferm\source\repos\C learning\תקופת היזמות\Blazor\BlazorPagination\BlazorPagination\Shared\bin\Debug\net6.0\BlazorPagination.Shared.deps.json
+C:\Users\oferm\source\repos\C learning\תקופת היזמות\Blazor\BlazorPagination\BlazorPagination\Shared\bin\Debug\net6.0\BlazorPagination.Shared.dll
+C:\Users\oferm\source\repos\C learning\תקופת היזמות\Blazor\BlazorPagination\BlazorPagination\Shared\bin\Debug\net6.0\BlazorPagination.Shared.pdb
+C:\Users\oferm\source\repos\C learning\תקופת היזמות\Blazor\BlazorPagination\BlazorPagination\Shared\obj\Debug\net6.0\BlazorPagination.Shared.csproj.AssemblyReference.cache
+C:\Users\oferm\source\repos\C learning\תקופת היזמות\Blazor\BlazorPagination\BlazorPagination\Shared\obj\Debug\net6.0\BlazorPagination.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\oferm\source\repos\C learning\תקופת היזמות\Blazor\BlazorPagination\BlazorPagination\Shared\obj\Debug\net6.0\BlazorPagination.Shared.AssemblyInfoInputs.cache
+C:\Users\oferm\source\repos\C learning\תקופת היזמות\Blazor\BlazorPagination\BlazorPagination\Shared\obj\Debug\net6.0\BlazorPagination.Shared.AssemblyInfo.cs
+C:\Users\oferm\source\repos\C learning\תקופת היזמות\Blazor\BlazorPagination\BlazorPagination\Shared\obj\Debug\net6.0\BlazorPagination.Shared.csproj.CoreCompileInputs.cache
+C:\Users\oferm\source\repos\C learning\תקופת היזמות\Blazor\BlazorPagination\BlazorPagination\Shared\obj\Debug\net6.0\BlazorPagination.Shared.dll
+C:\Users\oferm\source\repos\C learning\תקופת היזמות\Blazor\BlazorPagination\BlazorPagination\Shared\obj\Debug\net6.0\refint\BlazorPagination.Shared.dll
+C:\Users\oferm\source\repos\C learning\תקופת היזמות\Blazor\BlazorPagination\BlazorPagination\Shared\obj\Debug\net6.0\BlazorPagination.Shared.pdb
+C:\Users\oferm\source\repos\C learning\תקופת היזמות\Blazor\BlazorPagination\BlazorPagination\Shared\obj\Debug\net6.0\ref\BlazorPagination.Shared.dll

@@ -1,0 +1,12 @@
+C:\Users\oferm\source\repos\C learning\תקופת היזמות\Blazor\BlazorXml\BlazorXml\Shared\bin\Debug\net6.0\BlazorXml.Shared.deps.json
+C:\Users\oferm\source\repos\C learning\תקופת היזמות\Blazor\BlazorXml\BlazorXml\Shared\bin\Debug\net6.0\BlazorXml.Shared.dll
+C:\Users\oferm\source\repos\C learning\תקופת היזמות\Blazor\BlazorXml\BlazorXml\Shared\bin\Debug\net6.0\BlazorXml.Shared.pdb
+C:\Users\oferm\source\repos\C learning\תקופת היזמות\Blazor\BlazorXml\BlazorXml\Shared\obj\Debug\net6.0\BlazorXml.Shared.csproj.AssemblyReference.cache
+C:\Users\oferm\source\repos\C learning\תקופת היזמות\Blazor\BlazorXml\BlazorXml\Shared\obj\Debug\net6.0\BlazorXml.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\oferm\source\repos\C learning\תקופת היזמות\Blazor\BlazorXml\BlazorXml\Shared\obj\Debug\net6.0\BlazorXml.Shared.AssemblyInfoInputs.cache
+C:\Users\oferm\source\repos\C learning\תקופת היזמות\Blazor\BlazorXml\BlazorXml\Shared\obj\Debug\net6.0\BlazorXml.Shared.AssemblyInfo.cs
+C:\Users\oferm\source\repos\C learning\תקופת היזמות\Blazor\BlazorXml\BlazorXml\Shared\obj\Debug\net6.0\BlazorXml.Shared.csproj.CoreCompileInputs.cache
+C:\Users\oferm\source\repos\C learning\תקופת היזמות\Blazor\BlazorXml\BlazorXml\Shared\obj\Debug\net6.0\BlazorXml.Shared.dll
+C:\Users\oferm\source\repos\C learning\תקופת היזמות\Blazor\BlazorXml\BlazorXml\Shared\obj\Debug\net6.0\refint\BlazorXml.Shared.dll
+C:\Users\oferm\source\repos\C learning\תקופת היזמות\Blazor\BlazorXml\BlazorXml\Shared\obj\Debug\net6.0\BlazorXml.Shared.pdb
+C:\Users\oferm\source\repos\C learning\תקופת היזמות\Blazor\BlazorXml\BlazorXml\Shared\obj\Debug\net6.0\ref\BlazorXml.Shared.dll

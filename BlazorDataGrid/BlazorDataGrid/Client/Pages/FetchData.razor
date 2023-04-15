@@ -1,0 +1,80 @@
+﻿@page "/fetchdata"
+@using BlazorDataGrid.Shared
+@using Microsoft.AspNetCore.Components.QuickGrid
+@inject HttpClient Http
+
+<PageTitle>Weather forecast</PageTitle>
+
+<h1>Weather forecast</h1>
+
+<p>This component demonstrates fetching data from the server.</p>
+
+@*@if (forecasts == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <QuickGrid Items="forecasts.AsQueryable().Where(f => f.Summary.ToLower().Contains(filter.ToLower()))" ResizableColumns>
+        <PropertyColumn Property="f => f.Date" Format="dddd, dd MMMM yyyy" Sortable="true" />
+        <PropertyColumn Property="f => f.TemperatureC" Title="Temp (C)" Sortable="true" />
+        <PropertyColumn Property="f => f.TemperatureF" Title="Temp (F)" Sortable="true" />
+        <PropertyColumn Property="f => f.Summary">
+            <ColumnOptions>
+                <input @bind="filter"/>
+            </ColumnOptions>
+        </PropertyColumn>
+        <TemplateColumn>
+            <div>
+                <span>Wow, it's really @context.Summary today!</span>
+            </div>
+        </TemplateColumn>
+    </QuickGrid>
+}
+
+@code {
+    private WeatherForecast[]? forecasts;
+    private string filter = "";
+
+    protected override async Task OnInitializedAsync()
+    {
+        forecasts = await Http.GetFromJsonAsync<WeatherForecast[]>("WeatherForecast");
+    }
+}
+*@
+<div style="display: @(loading ? "block" : "none")">
+    <p>Loading...</p>
+</div>
+
+<div class="grid" tabindex="-1" style="display: @(loading ? "none" : "block")">
+    <QuickGrid ItemsProvider="wfProvider">
+        <PropertyColumn Format="dd-MM-yyyy"
+                        Property="@(c => c.Date)" Sortable="true" IsDefaultSort="SortDirection.Ascending" />
+        <PropertyColumn Property="@(c => c.TemperatureC)" />
+        <PropertyColumn Property="@(c => c.TemperatureF)" />
+        <PropertyColumn Property="@(c => c.Summary)" />
+
+    </QuickGrid>
+</div>
+
+@code {
+    GridItemsProvider<WeatherForecast>? wfProvider;
+    bool loading = true;
+    protected override void OnInitialized()
+    {
+
+        wfProvider = async req =>
+        {
+            var sortByAscending = req.SortByAscending;
+            var column = req.SortByColumn!.Title;
+            var response = await Http.GetFromJsonAsync<WeatherForecast[]>(
+                $"WeatherForecast?sortByAscending={sortByAscending}&column={column}");
+            loading = false;
+            StateHasChanged();
+            return GridItemsProviderResult.From(items: response!,
+            totalItemCount: response!.Count());
+
+        };
+
+    }
+}

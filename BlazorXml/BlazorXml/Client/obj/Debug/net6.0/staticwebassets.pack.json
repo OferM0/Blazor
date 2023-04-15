@@ -1,0 +1,97 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\oferm\\source\\repos\\C learning\\תקופת היזמות\\Blazor\\BlazorXml\\BlazorXml\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+    },
+    {
+      "Id": "C:\\Users\\oferm\\source\\repos\\C learning\\תקופת היזמות\\Blazor\\BlazorXml\\BlazorXml\\Client\\obj\\Debug\\net6.0\\build-gz\\dfkLLCyM.gz",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
+    },
+    {
+      "Id": "C:\\Users\\oferm\\source\\repos\\C learning\\תקופת היזמות\\Blazor\\BlazorXml\\BlazorXml\\Client\\obj\\Debug\\net6.0\\scopedcss\\bundle\\BlazorXml.Client.styles.css",
+      "PackagePath": "staticwebassets\\BlazorXml.Client.styles.css"
+    },
+    {
+      "Id": "C:\\Users\\oferm\\source\\repos\\C learning\\תקופת היזמות\\Blazor\\BlazorXml\\BlazorXml\\Client\\wwwroot\\Employee.xml",
+      "PackagePath": "staticwebassets\\Employee.xml"
+    },
+    {
+      "Id": "C:\\Users\\oferm\\source\\repos\\C learning\\תקופת היזמות\\Blazor\\BlazorXml\\BlazorXml\\Client\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\oferm\\source\\repos\\C learning\\תקופת היזמות\\Blazor\\BlazorXml\\BlazorXml\\Client\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\oferm\\source\\repos\\C learning\\תקופת היזמות\\Blazor\\BlazorXml\\BlazorXml\\Client\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\oferm\\source\\repos\\C learning\\תקופת היזמות\\Blazor\\BlazorXml\\BlazorXml\\Client\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "C:\\Users\\oferm\\source\\repos\\C learning\\תקופת היזמות\\Blazor\\BlazorXml\\BlazorXml\\Client\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "C:\\Users\\oferm\\source\\repos\\C learning\\תקופת היזמות\\Blazor\\BlazorXml\\BlazorXml\\Client\\wwwroot\\css\\open-iconic\\README.md",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\README.md"
+    },
+    {
+      "Id": "C:\\Users\\oferm\\source\\repos\\C learning\\תקופת היזמות\\Blazor\\BlazorXml\\BlazorXml\\Client\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\oferm\\source\\repos\\C learning\\תקופת היזמות\\Blazor\\BlazorXml\\BlazorXml\\Client\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
+    },
+    {
+      "Id": "C:\\Users\\oferm\\source\\repos\\C learning\\תקופת היזמות\\Blazor\\BlazorXml\\BlazorXml\\Client\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
+    },
+    {
+      "Id": "C:\\Users\\oferm\\source\\repos\\C learning\\תקופת היזמות\\Blazor\\BlazorXml\\BlazorXml\\Client\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
+    },
+    {
+      "Id": "C:\\Users\\oferm\\source\\repos\\C learning\\תקופת היזמות\\Blazor\\BlazorXml\\BlazorXml\\Client\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\oferm\\source\\repos\\C learning\\תקופת היזמות\\Blazor\\BlazorXml\\BlazorXml\\Client\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
+    },
+    {
+      "Id": "C:\\Users\\oferm\\source\\repos\\C learning\\תקופת היזמות\\Blazor\\BlazorXml\\BlazorXml\\Client\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\oferm\\source\\repos\\C learning\\תקופת היזמות\\Blazor\\BlazorXml\\BlazorXml\\Client\\wwwroot\\icon-192.png",
+      "PackagePath": "staticwebassets\\icon-192.png"
+    },
+    {
+      "Id": "C:\\Users\\oferm\\source\\repos\\C learning\\תקופת היזמות\\Blazor\\BlazorXml\\BlazorXml\\Client\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.BlazorXml.Client.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.BlazorXml.Client.props",
+      "PackagePath": "build\\BlazorXml.Client.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.BlazorXml.Client.props",
+      "PackagePath": "buildMultiTargeting\\BlazorXml.Client.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.BlazorXml.Client.props",
+      "PackagePath": "buildTransitive\\BlazorXml.Client.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

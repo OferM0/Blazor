@@ -1,7 +1,117 @@
-﻿@page "/"
+﻿@*@page "/"
 @using System.Net.Http.Headers
 @using BlazorFileUpload.Shared
 @inject HttpClient Http
+
+<PageTitle>Upload Files and Directories</PageTitle>
+
+<h1>Upload Files and Directories!</h1>
+
+<h3>Select a files:</h3>
+<InputFile OnChange="@OnInputFileChange" multiple />
+
+@if (fileNames.Count > 0)
+{
+    <h3>Selected Files:</h3>
+    <ul>
+        @foreach (var fileName in fileNames.Where(f => f.FileType == FileType.File))
+        {
+            <li>
+                File: @fileName.Name
+                <br>
+                <span>
+                    Stored File Name: @GetStoredFileName(fileName.Name)
+                </span>
+            </li>
+        }
+    </ul>
+}
+
+
+<h3>Selected Directories:</h3>
+<InputFile OnChange="@OnDirectorySelected" multiple webkitdirectory />
+
+<ul>
+    @foreach (var directoryName in fileNames.Where(f => f.FileType == FileType.Directory))
+    {
+        <li>
+            Directory: @directoryName.Name
+        </li>
+    }
+</ul>
+
+@code {
+    private int maxAllowedFiles = int.MaxValue;
+    private long maxFileSize = long.MaxValue;
+    private List<SelectedFile> fileNames = new();
+    private List<UploadResult> uploadResults = new();
+
+    private enum FileType
+    {
+        File,
+        Directory
+    }
+
+    private class SelectedFile
+    {
+        public string Name { get; set; }
+        public FileType FileType { get; set; }
+    }
+
+    private async Task OnInputFileChange(InputFileChangeEventArgs e)
+    {
+        using var content = new MultipartFormDataContent();
+
+        foreach (var file in e.GetMultipleFiles(maxAllowedFiles))
+        {
+            var fileContent = new StreamContent(file.OpenReadStream(maxFileSize));
+            fileContent.Headers.ContentType = new MediaTypeHeaderValue(file.ContentType);
+
+            fileNames.Add(new SelectedFile { Name = file.Name, FileType = FileType.File });
+
+            content.Add(
+                content: fileContent,
+                name: "\"files\"",
+                fileName: file.Name);
+        }
+
+        var response = await Http.PostAsync("/api/File", content);
+        var newUploadResults = await response.Content.ReadFromJsonAsync<List<UploadResult>>();
+
+        if(newUploadResults is not null)
+        {
+            uploadResults = uploadResults.Concat(newUploadResults).ToList();
+        }
+    }
+
+    private async Task OnDirectorySelected(InputFileChangeEventArgs e)
+    {
+        var firstFile = e.GetMultipleFiles().FirstOrDefault();
+
+        if (firstFile != null)
+        {
+            var reader = new StreamReader(firstFile.OpenReadStream());
+            var fileData = await reader.ReadToEndAsync();
+            var directoryPath = firstFile.Name.TrimEnd('\\', '/');
+            fileNames.Add(new SelectedFile { Name = directoryPath, FileType = FileType.Directory });
+        }
+    }
+
+    private string? GetStoredFileName(string fileName)
+    {
+        var uploadResult = uploadResults.SingleOrDefault(f => f.FileName == fileName);
+        if (uploadResult is not null)
+            return uploadResult.StoredFileName;
+
+        return "File not found.";
+    }
+}
+*@
+@page "/"
+@using System.Net.Http.Headers
+@using BlazorFileUpload.Shared
+@inject HttpClient Http
+@inject IJSRuntime JS
 
 <PageTitle>Upload Files</PageTitle>
 
@@ -20,6 +130,7 @@
                 <span>
                     Stored File Name: @GetStoredFileName(fileName)
                 </span>
+                <button @onclick="@(() => DownloadFile(GetStoredFileName(fileName),fileName))">Download File</button>
             </li>
         }
     </ul>
@@ -51,7 +162,7 @@
         var response = await Http.PostAsync("/api/File", content);
         var newUploadResults = await response.Content.ReadFromJsonAsync<List<UploadResult>>();
 
-        if(newUploadResults is not null)
+        if (newUploadResults is not null)
         {
             uploadResults = uploadResults.Concat(newUploadResults).ToList();
         }
@@ -64,5 +175,21 @@
             return uploadResult.StoredFileName;
 
         return "File not found.";
+    }
+
+    private async Task DownloadFile(string storedFileName, string originalFileName)
+    {
+        var respone = await Http.GetAsync($"/api/File/{storedFileName}");
+
+        if (!respone.IsSuccessStatusCode)
+        {
+            await JS.InvokeVoidAsync("alert", "The File not found");
+        }
+        else
+        {
+            var fileStream = respone.Content.ReadAsStream();
+            using var streamRef = new DotNetStreamReference(stream: fileStream);
+            await JS.InvokeVoidAsync("downloadFileFromStream", originalFileName, streamRef);
+        }
     }
 }
