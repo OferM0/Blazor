@@ -1,0 +1,56 @@
+﻿@page "/barchart"
+@using ChartJs.Blazor.BarChart
+
+<PageTitle>BarChart</PageTitle>
+
+<h3>BarChart</h3>
+
+<Chart Config="_config"></Chart>
+
+@code {
+	private BarConfig _config;
+
+    protected override void OnInitialized()
+    {
+        _config = new BarConfig
+        {
+            Options = new BarOptions
+            {
+                Responsive = true,
+                Title = new OptionsTitle
+                {
+                    Display = true,
+                    Text = "ChartJs.Blazor Bar Chart"
+                },
+                Scales = new BarScales
+                {
+                    YAxes = new[]
+                    {
+                        new LinearCartesianAxis
+                        {
+                            Ticks = new LinearCartesianTicks
+                            {
+                                BeginAtZero = true
+                            }
+                        }
+                    }
+                }
+            }
+        };
+
+        foreach (string month in new[] { "January", "February", "March", "April", "May", "June", "July" })
+        {
+            _config.Data.Labels.Add(month);
+        }
+
+        BarDataset<int> dataset = new BarDataset<int>(new[] { 65, 59, 80, 81, 56, 55, 40 })
+        {
+            Label = "Sales",
+            BackgroundColor = "rgba(75, 192, 192, 0.2)",
+            BorderColor = "rgb(75, 192, 192)",
+            BorderWidth = 1
+        };
+
+        _config.Data.Datasets.Add(dataset);
+    }
+}

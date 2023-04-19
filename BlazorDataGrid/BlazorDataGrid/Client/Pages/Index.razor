@@ -18,7 +18,7 @@
     <PropertyColumn Property="@(p => p.Active)" Sortable="true">
         <ColumnOptions>
             <label>
-                <input type="checkbox" @bind="activeOnly" @bind:after="Filter" /> Actives only
+                <input type="checkbox" @bind="activeOnly" @*@bind:after="Filter"*@ /> Actives only
             </label>
         </ColumnOptions>
     </PropertyColumn>

@@ -104,3 +104,6 @@ C:\Users\oferm\source\repos\C learning\תקופת היזמות\Blazor\BlazorPagi
 C:\Users\oferm\source\repos\C learning\תקופת היזמות\Blazor\BlazorPagination\BlazorPagination\Server\obj\Debug\net6.0\BlazorPagination.Server.pdb
 C:\Users\oferm\source\repos\C learning\תקופת היזמות\Blazor\BlazorPagination\BlazorPagination\Server\obj\Debug\net6.0\BlazorPagination.Server.genruntimeconfig.cache
 C:\Users\oferm\source\repos\C learning\תקופת היזמות\Blazor\BlazorPagination\BlazorPagination\Server\obj\Debug\net6.0\ref\BlazorPagination.Server.dll
+C:\Users\oferm\source\repos\C learning\תקופת היזמות\Blazor\BlazorPagination\BlazorPagination\Server\bin\Debug\net6.0\Blazorise.dll
+C:\Users\oferm\source\repos\C learning\תקופת היזמות\Blazor\BlazorPagination\BlazorPagination\Server\bin\Debug\net6.0\Blazorise.Bootstrap.dll
+C:\Users\oferm\source\repos\C learning\תקופת היזמות\Blazor\BlazorPagination\BlazorPagination\Server\bin\Debug\net6.0\Blazorise.Licensing.dll

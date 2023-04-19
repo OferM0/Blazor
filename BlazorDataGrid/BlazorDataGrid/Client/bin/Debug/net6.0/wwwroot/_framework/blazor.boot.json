@@ -199,14 +199,14 @@
       "netstandard.dll": "sha256-kBK\/QJy7\/skP97jqnvXnOFMrhWS8HZ1bsADFK\/gZkyM=",
       "System.Private.CoreLib.dll": "sha256-3webPuyNUXfAFKY5c1tC\/jBVrjZHelBwvXrr1E9VJuk=",
       "BlazorDataGrid.Shared.dll": "sha256-H8Rd1yCboF7HqacpNVisUB4UBP5okwiqoQAsntRcH8M=",
-      "BlazorDataGrid.Client.dll": "sha256-bQlKG6bpMcNiAIR+LMosOeV8hV\/lOb6bIftEJ0tX8n0="
+      "BlazorDataGrid.Client.dll": "sha256-PKmLQokD5xdGjdFfg4JEMpbiJDfZlYYjk6G03OpN2SA="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
       "BlazorDataGrid.Shared.pdb": "sha256-VDWKVc09phF3aWwFFfcx8ovPS4rr8vxxc3IuAmFNdEY=",
-      "BlazorDataGrid.Client.pdb": "sha256-S4PrMOZ5YWsPXsvebYTa3wlhnNEqoi\/rLd0\/2eRclwk="
+      "BlazorDataGrid.Client.pdb": "sha256-ZiJTDkapsoS6J1bwyvbKiCaNFpB4vK0h+1L6uZAu\/iI="
     },
     "runtime": {
       "dotnet.6.0.13.tpy9n8g67z.js": "sha256-X\/515F1HEzgsDZdY8BJjt8YUwrWngHGZkMnpClhsrpY=",
